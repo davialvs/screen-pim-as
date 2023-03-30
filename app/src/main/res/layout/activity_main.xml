@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Nome da aplicação -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicativo de Tatuagem"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_purple"
+        />
+
+    <!-- Barra de pesquisa -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesquisar"
+        android:padding="10dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/app_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <!-- Foto 1 -->
+    <ImageView
+        android:id="@+id/photo1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/search_bar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo1"
+        android:background="@drawable/rounder_courners"/>
+
+    <!-- Foto 2 -->
+    <ImageView
+        android:id="@+id/photo2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo2"
+        android:layout_below="@id/photo1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounder_courners"
+        />
+
+    <!-- Foto 3 -->
+    <ImageView
+        android:id="@+id/photo3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo3"
+        android:layout_below="@id/photo2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounder_courners"
+        />
+
+    <!-- Foto 4 -->
+    <ImageView
+        android:id="@+id/photo4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo4"
+        android:layout_below="@id/search_bar"
+        android:layout_toRightOf="@id/photo1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounder_courners"
+        />
+
+    <!-- Foto 5 -->
+    <ImageView
+        android:id="@+id/photo5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo5"
+        android:layout_below="@id/search_bar"
+        android:layout_toRightOf="@id/photo2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        />
+
+    <!-- Foto 6 -->
+    <ImageView
+        android:id="@+id/photo6"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/search_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/photo1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo5" />
+
+    <!-- Barra de botões -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="#"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="!"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="%"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+</RelativeLayout>
